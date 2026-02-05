@@ -1,8 +1,8 @@
 # API REST de Usuários
 
-API REST simples para gerenciamento de usuários, desenvolvida com **Node.js** e **Express**, aplicando os princípios do CRUD e boas práticas HTTP.
+API REST para gerenciamento de usuários, desenvolvida com **Node.js** e **Express**, aplicando os princípios do CRUD e boas práticas no uso de métodos HTTP.
 
-Este projeto foi criado com fins de estudo e portfólio, demonstrando o funcionamento das rotas **GET, POST, PUT, PATCH e DELETE**, organização em rotas e validações básicas.
+Este projeto foi criado com foco em **aprendizado e portfólio**, demonstrando organização de rotas, validações básicas e testes de requisições HTTP.
 
 ---
 
@@ -22,6 +22,7 @@ Este projeto foi criado com fins de estudo e portfólio, demonstrando o funciona
 * Node.js
 * Express.js
 * JavaScript
+* REST Client (VS Code)
 
 ---
 
@@ -34,6 +35,8 @@ src/
  ├── data/
  │    └── usuarios.js
  └── index.js
+
+local.http
 ```
 
 ---
@@ -43,22 +46,28 @@ src/
 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/heitorsepulcrii/API-REST-de-Usuarios.git
 ```
 
-2. Instale as dependências
+2. Acesse a pasta do projeto
+
+```bash
+cd API-REST-de-Usuarios
+```
+
+3. Instale as dependências
 
 ```bash
 npm install
 ```
 
-3. Execute o servidor
+4. Inicie o servidor
 
 ```bash
 node src/index.js
 ```
 
-O servidor estará rodando em:
+O servidor será executado em:
 
 ```
 http://localhost:3000
@@ -66,9 +75,19 @@ http://localhost:3000
 
 ---
 
+## 🔧 Testes das rotas
+
+As rotas da API podem ser testadas utilizando o arquivo **`local.http`**, por meio da extensão **REST Client** do VS Code.
+
+Após iniciar o servidor, basta abrir o arquivo `local.http` e executar as requisições para testar os métodos **GET, POST, PUT, PATCH e DELETE**.
+
+> Também é possível testar a API utilizando ferramentas como Postman ou Insomnia.
+
+---
+
 ## 📌 Rotas da API
 
-### 🔹 Listar todos os usuários
+### 🔹 Listar usuários
 
 **GET** `/usuarios`
 
@@ -80,7 +99,7 @@ http://localhost:3000
 
 ---
 
-### 🔹 Criar novo usuário
+### 🔹 Criar usuário
 
 **POST** `/usuarios`
 
@@ -88,9 +107,9 @@ http://localhost:3000
 
 ```json
 {
-  "nome": "João",
-  "email": "joao@email.com",
-  "idade": 25
+  "nome": "Carlos Oliveira",
+  "email": "carlos@email.com",
+  "idade": 32
 }
 ```
 
@@ -104,9 +123,9 @@ http://localhost:3000
 
 ```json
 {
-  "nome": "João",
-  "email": "joao@email.com",
-  "idade": 26
+  "nome": "Marcos",
+  "email": "marcos@email.com",
+  "idade": 30
 }
 ```
 
@@ -141,16 +160,6 @@ http://localhost:3000
 
 ---
 
-## 🚀 Próximas melhorias
+## 👨‍💻 Heitor Sepulcri
 
-* Integração com banco de dados
-* Criação de controllers
-* Middleware de validação
-* Documentação com Swagger
-* Testes automatizados
-
----
-
-## 👨‍💻 Autor
-
-Projeto desenvolvido para fins de estudo e evolução em desenvolvimento backend com Node.js.
+Projeto desenvolvido para fins de estudo e evolução em desenvolvimento backend com Node.js e Express.
