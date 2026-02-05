@@ -1,0 +1,38 @@
+### Get usuário
+GET  http://localhost:3000/usuarios
+Content-Type: application/json
+
+### Post novo usuário
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nome": "Carlos Oliveira",
+    "email": "carlos.oliveira@email.com",
+    "idade": 32
+}
+
+### Put usuário existente
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "marcos",
+    "email": "carlos.oliveira@email.com",
+    "idade": 32
+}
+
+### Patch usuário existente
+PATCH  http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "email": "francias2@gmail.com",
+    "idade": 39
+}
+
+### Delete usuário existente
+DELETE http://localhost:3000/usuarios/1
+Content-Type: application/json
