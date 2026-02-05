@@ -7,7 +7,6 @@ POST http://localhost:3000/usuarios
 Content-Type: application/json
 
 {
-    "id": 2,
     "nome": "Carlos Oliveira",
     "email": "carlos.oliveira@email.com",
     "idade": 32
@@ -18,7 +17,6 @@ PUT http://localhost:3000/usuarios/1
 Content-Type: application/json
 
 {
-    "id": 1,
     "nome": "marcos",
     "email": "carlos.oliveira@email.com",
     "idade": 32
